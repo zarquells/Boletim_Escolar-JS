@@ -1,0 +1,33 @@
+.introducao-contaneir{
+    display: flex; 
+}
+
+.descricao-contaneir{
+    .title{
+        padding-bottom: 19px;
+    }
+    flex-grow: 0;
+    .text{
+        line-height: 1.43;
+    }
+}
+
+.logo-contaneir{
+    position: relative;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    height: 430px;
+
+    img{
+        width: 240px;
+        margin-top: auto;
+    }
+
+    .font-sailormoon{
+        position: absolute;
+        top: 390px;
+        left: 180px;
+    }
+}
