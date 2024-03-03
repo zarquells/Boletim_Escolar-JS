@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/icon_project2.jpg" type="image/x-icon">
+    <title>Boletim em JS</title>
+    <!-- <link rel="preload" href="css/style.css" as="style"> -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">    
+            <img src="img/reference-js-icon.svg" id="js-icon">
+
+            <span class="squad-name font-squad-name">
+                <p> Squad <p>
+                <p> Yume  <p>
+                <p> Neko  <p>
+            </span>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-contaneir">
+            <div class="introducao-contaneir">
+                <div class="descricao-contaneir">
+                    <h1 class="title"> Descrição do <br> Projeto </h1>
+                    <br>
+
+                    <p class="text">
+                        Tabela dinâmica feita com JavaScript para <br> calcular as médias finais de 5 alunos da <br> Turma X, professor J, Matéria Y. <br>
+                        Insira os dados dinâmicos de cada aluno como <br> nome, nota p/ bimestre e faltas totais.
+                    </p>
+                </div>
+                
+                <div class="logo-contaneir">
+                    <img src="img/sailor-moon.png" id="logo-icon">
+                    <span class="squad-name font-sailormoon"> 
+                        <p> Squad <p>
+                        <p> Yume  <p>
+                        <p> Neko  <p>
+                    </span>
+                </div>
+            </div>
+
+            <div class="alunos-container">
+                <h1 class="alunos title"> Alunos e Notas </h1>
+                <br>
+
+                <form class="alunos input">
+                    <!-- ALUNO 1 -->
+                    <div id="AlunoA">
+                        <input type="text"   class="nome"   placeholder="Aluno A">
+                        <input type="number" class="input-nota nota1"  min="0" max="100">
+                        <input type="number" class="input-nota nota2"  min="0" max="100">
+                        <input type="number" class="input-nota nota3"  min="0" max="100">
+                        <input type="number" class="input-nota nota4"  min="0" max="100">
+                        <input type="number" class="input-nota faltas" min="0" max="200">
+                        <!-- P.S: Só há 200 dias letivos num ano rsrs -->
+                    </div>
+                </form>
+
+                <span id="legenda-notas">
+                    <!-- Personalização exclusiva do <h4> para esta descrição T_T-->
+                    <h4> 1º Bim </h4> <h4> 2º Bim </h4> <h4> 3º Bim </h4> <h4> 4º Bim </h4> <h4> Faltas </h4>
+                </span>
+
+                <button class="botao adicionar" id="addAluno">Adicionar aluno !</button>
+            </div>
+
+            <div class="resultado-contaneir">
+                <h1 class="resultado title"> Turma/Boletim </h1>
+                
+                <div id="outputBoletim"></div>
+
+                <span>
+                    <h4> Situação Final </h4>
+                    <h4> Média          </h4>
+                </span>
+            </div>
+
+            <div class="medias-turma-contaneir">
+                <form class="resultado-output">
+                    <h3> Média Geral:            </h3>                                  
+                    <output id="media-geral"> 80.20 </output>
+                    <br>
+
+                    <h3> Alunos Abaixo da Média: </h3>
+                    <output id="nome-">             </output>
+                    <output id="media-alunoB">      </output>
+                    <br>
+
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">    
+            <h2>Agradecemos a visita em nosso site!</h2>
+            <p>
+                Este projeto foi feito com <br> 
+                muito esforço e amor,      <br> 
+                espera que tenham gostado. 
+            </p>
+            <br>
+
+            <h2>Redes Sociais:</h2>
+            <p> 
+                Github:    LINK LINK <br>
+                LinkedIn:  LINK LINK <br> 
+                Instagram: LINK LINK 
+            </p>
+            <br>
+
+            <h2>Créditos:</h2>
+            <p>
+                Giovanna Santos <br>
+                Érica Lelis     <br>
+                Senai Suíço-Brasileiro
+            </p>
+            <br>
+            
+            <span class="squad-name font-squad-name">
+                <p> Squad <p>
+                <p> Yume  <p>
+                <p> Neko  <p>
+            </span>
+        </div>
+
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
