@@ -57,41 +57,30 @@
                         <input type="number" class="input-nota nota2"  min="0" max="100">
                         <input type="number" class="input-nota nota3"  min="0" max="100">
                         <input type="number" class="input-nota nota4"  min="0" max="100">
-                        <input type="number" class="input-nota faltas" min="0" max="200">
-                        <!-- P.S: Só há 200 dias letivos num ano rsrs -->
                     </div>
                 </form>
 
                 <span id="legenda-notas">
                     <!-- Personalização exclusiva do <h4> para esta descrição T_T-->
-                    <h4> 1º Bim </h4> <h4> 2º Bim </h4> <h4> 3º Bim </h4> <h4> 4º Bim </h4> <h4> Faltas </h4>
+                    <h4> 1º Bim </h4> <h4> 2º Bim </h4> <h4> 3º Bim </h4> <h4> 4º Bim </h4> 
                 </span>
 
                 <button class="botao adicionar" id="addAluno">Adicionar aluno !</button>
             </div>
-
+            
             <div class="resultado-contaneir">
-                <h1 class="resultado title"> Turma/Boletim </h1>
+                <h1 class="resultado title">Turma/Boletim</h1>
+                <div id="outputAlunos"></div>
                 
-                <div id="outputBoletim"></div>
-
-                <span>
-                    <h4> Situação Final </h4>
-                    <h4> Média          </h4>
-                </span>
             </div>
-
+            <button class="botao adicionar" id="viewResult">Visualizar Resultados</button>
+            <br>
+            <br>
+            <br>
             <div class="medias-turma-contaneir">
+                <h1 class="resultado title">Resultados</h1>
                 <form class="resultado-output">
-                    <h3> Média Geral:            </h3>                                  
-                    <output id="media-geral"> 80.20 </output>
-                    <br>
-
-                    <h3> Alunos Abaixo da Média: </h3>
-                    <output id="nome-">             </output>
-                    <output id="media-alunoB">      </output>
-                    <br>
-
+                    <div id="outputResultados"></div>
                 </form>
             </div>
 
@@ -99,6 +88,9 @@
     </main>
 
     <footer>
+        <br>
+        <br>
+        <br>
         <div class="footer-container">    
             <h2>Agradecemos a visita em nosso site!</h2>
             <p>
