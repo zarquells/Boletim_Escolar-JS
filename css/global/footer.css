@@ -1,0 +1,25 @@
+.footer-container {
+    height: auto;
+    margin-top: 52px;
+    padding: 20px 72px 20px 65px;
+    border-top: 0.5px solid #5aac81;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .squad-name p{
+    width: 64px;
+    font-size: 30px;
+    margin: auto;
+}
+
+footer h2{
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+footer p{
+    font-size: 12px;
+    text-align: center;
+}

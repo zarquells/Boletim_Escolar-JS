@@ -15,9 +15,9 @@
             <img src="img/reference-js-icon.svg" id="js-icon">
 
             <span class="squad-name font-squad-name">
-                <p> Squad <p>
-                <p> Yume  <p>
-                <p> Neko  <p>
+                <p> Squad </p>
+                <p> Yume  </p>
+                <p> Neko  </p>
             </span>
         </div>
     </header>
@@ -38,15 +38,15 @@
                 <div class="logo-contaneir">
                     <img src="img/sailor-moon.png" id="logo-icon">
                     <span class="squad-name font-sailormoon"> 
-                        <p> Squad <p>
-                        <p> Yume  <p>
-                        <p> Neko  <p>
+                        <p> Squad </p>
+                        <p> Yume  </p>
+                        <p> Neko  </p>
                     </span>
                 </div>
             </div>
 
             <div class="alunos-container">
-                <h1 class="alunos title"> Alunos e Notas </h1>
+                <h1 class="title"> Alunos e Notas </h1>
                 <br>
 
                 <form class="alunos input">
@@ -60,37 +60,113 @@
                         <input type="number" class="input-nota faltas" min="0" max="200">
                         <!-- P.S: Só há 200 dias letivos num ano rsrs -->
                     </div>
+
+                    <!-- ALUNO 2 -->
+                    <div id="AlunoB">
+                        <input type="text"   class="nome"   placeholder="Aluno A">
+                        <input type="number" class="input-nota nota1"  min="0" max="100">
+                        <input type="number" class="input-nota nota2"  min="0" max="100">
+                        <input type="number" class="input-nota nota3"  min="0" max="100">
+                        <input type="number" class="input-nota nota4"  min="0" max="100">
+                        <input type="number" class="input-nota faltas" min="0" max="200">
+                    </div>
+
+                    <!-- ALUNO 3 -->
+                    <div id="AlunoC">
+                        <input type="text"   class="nome"   placeholder="Aluno A">
+                        <input type="number" class="input-nota nota1"  min="0" max="100">
+                        <input type="number" class="input-nota nota2"  min="0" max="100">
+                        <input type="number" class="input-nota nota3"  min="0" max="100">
+                        <input type="number" class="input-nota "       min="0" max="100">
+                        <input type="number" class="input-nota faltas" min="0" max="200">
+                    </div>
+
+                    <!-- ALUNO 4 -->
+                    <div id="AlunoD">
+                        <input type="text"   class="nome"   placeholder="Aluno D">
+                        <input type="number" class="input-nota nota1"  min="0" max="100">
+                        <input type="number" class="input-nota nota2"  min="0" max="100">
+                        <input type="number" class="input-nota nota3"  min="0" max="100">
+                        <input type="number" class="input-nota nota4"  min="0" max="100">
+                        <input type="number" class="input-nota faltas" min="0" max="200">
+                    </div>
+
+                    <!-- ALUNO 5 -->
+                    <div id="AlunoE">
+                        <input type="text"   class="nome"   placeholder="Aluno E">
+                        <input type="number" class="input-nota nota1"  min="0" max="100">
+                        <input type="number" class="input-nota nota2"  min="0" max="100">
+                        <input type="number" class="input-nota nota3"  min="0" max="100">
+                        <input type="number" class="input-nota nota4"  min="0" max="100">
+                        <input type="number" class="input-nota faltas" min="0" max="200">
+                    </div>
+
                 </form>
 
                 <span id="legenda-notas">
-                    <!-- Personalização exclusiva do <h4> para esta descrição T_T-->
                     <h4> 1º Bim </h4> <h4> 2º Bim </h4> <h4> 3º Bim </h4> <h4> 4º Bim </h4> <h4> Faltas </h4>
                 </span>
 
-                <button class="botao adicionar" id="addAluno">Adicionar aluno !</button>
+                <div class="bottons">
+                    <button id="button-add"> Add Aluno ! </button>
+                    <button id="button-calculo"> Go ! </button>
+                </div>
             </div>
 
             <div class="resultado-contaneir">
-                <h1 class="resultado title"> Turma/Boletim </h1>
-                
-                <div id="outputBoletim"></div>
+                <h1 class="title"> Resultado Final </h1>
+                <br>
+                <form class="resultado-output">
+                    <div class="alunoA">
+                        <h3> Aluno A: </h3>                                  
+                        <output id="resultado alunoA">  aprovado </output>
+                        <output id="media alunoA">     68.00 </output>
+                        <br>
+                    </div>
 
+                    <div class="alunoB">
+                        <h3> Aluno B: </h3> 
+                        <output id="resultado alunoB">  aprovado </output>
+                        <output id="media alunoB">   26.98   </output>
+                        <br>
+                    </div>
+
+                    <div class="alunoC">
+                        <h3> Aluno C: </h3>
+                        <output id="resultado alunoA">  aprovado </output>
+                        <output id="media alunoC">    100.00  </output>
+                        <br>
+                    </div>
+                    <div class="alunoD">
+                        <h3> Aluno D: </h3>
+                        <output id="resultado alunoD"> balballbalbal </output>
+                        <output id="media alunoD">   blalblalbalb   </output>
+                        <br>
+                    </div>
+
+                    <div class="alunoE">
+                        <h3> Aluno E: </h3>
+                        <output id="resultado alunoE">  abc </output>
+                        <output id="media alunoE">    abc  </output>
+                        <br> 
+                    </div>
+                </form> 
                 <span>
-                    <h4> Situação Final </h4>
-                    <h4> Média          </h4>
+                    <h4>Situação Final</h4>
+                    <h4>Média </h4>
                 </span>
             </div>
 
             <div class="medias-turma-contaneir">
-                <form class="resultado-output">
+                <form class="resultado-output-turma">
                     <h3> Média Geral:            </h3>                                  
                     <output id="media-geral"> 80.20 </output>
                     <br>
 
                     <h3> Alunos Abaixo da Média: </h3>
-                    <output id="nome-">             </output>
-                    <output id="media-alunoB">      </output>
                     <br>
+                    <output id="nome-abaixoM">  Diego   </output>
+                    <output id="nome-abaixoM">  Renato  </output>
 
                 </form>
             </div>
@@ -99,23 +175,27 @@
     </main>
 
     <footer>
-        <div class="footer-container">    
-            <h2>Agradecemos a visita em nosso site!</h2>
+        <div class="footer-container">
+            <div class="agradecimento footer-caixa"> 
+            <h2>Agradecemos a visita!</h2>
             <p>
                 Este projeto foi feito com <br> 
                 muito esforço e amor,      <br> 
                 espera que tenham gostado. 
             </p>
             <br>
+            </div>  
 
+            <div class="redes-sociais footer-caixa">
             <h2>Redes Sociais:</h2>
             <p> 
                 Github:    LINK LINK <br>
-                LinkedIn:  LINK LINK <br> 
-                Instagram: LINK LINK 
+                Linkedin:  LINK LINK <br> 
             </p>
             <br>
+            </div>  
 
+            <div class="creditos footer-caixa">
             <h2>Créditos:</h2>
             <p>
                 Giovanna Santos <br>
@@ -123,7 +203,8 @@
                 Senai Suíço-Brasileiro
             </p>
             <br>
-            
+            </div>
+
             <span class="squad-name font-squad-name">
                 <p> Squad <p>
                 <p> Yume  <p>
