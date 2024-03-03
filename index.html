@@ -60,46 +60,6 @@
                         <input type="number" class="input-nota faltas" min="0" max="200">
                         <!-- P.S: Só há 200 dias letivos num ano rsrs -->
                     </div>
-
-                    <!-- ALUNO 2 -->
-                    <div id="AlunoB">
-                        <input type="text"   class="nome"   placeholder="Aluno B">
-                        <input type="number" class="input-nota nota1"  min="0" max="100">
-                        <input type="number" class="input-nota nota2"  min="0" max="100">
-                        <input type="number" class="input-nota nota3"  min="0" max="100">
-                        <input type="number" class="input-nota nota4"  min="0" max="100">
-                        <input type="number" class="input-nota faltas" min="0" max="200">
-                    </div>
-
-                    <!-- ALUNO 3 -->
-                    <div id="AlunoC">
-                        <input type="text"   class="nome"   placeholder="Aluno C">
-                        <input type="number" class="input-nota nota1"  min="0" max="100">
-                        <input type="number" class="input-nota nota2"  min="0" max="100">
-                        <input type="number" class="input-nota nota3"  min="0" max="100">
-                        <input type="number" class="input-nota "       min="0" max="100">
-                        <input type="number" class="input-nota faltas" min="0" max="200">
-                    </div>
-
-                    <!-- ALUNO 4 -->
-                    <div id="AlunoD">
-                        <input type="text"   class="nome"   placeholder="Aluno D">
-                        <input type="number" class="input-nota nota1"  min="0" max="100">
-                        <input type="number" class="input-nota nota2"  min="0" max="100">
-                        <input type="number" class="input-nota nota3"  min="0" max="100">
-                        <input type="number" class="input-nota nota4"  min="0" max="100">
-                        <input type="number" class="input-nota faltas" min="0" max="200">
-                    </div>
-
-                    <!-- ALUNO 5 -->
-                    <div id="AlunoE">
-                        <input type="text"   class="nome"   placeholder="Aluno E">
-                        <input type="number" class="input-nota nota1"  min="0" max="100">
-                        <input type="number" class="input-nota nota2"  min="0" max="100">
-                        <input type="number" class="input-nota nota3"  min="0" max="100">
-                        <input type="number" class="input-nota nota4"  min="0" max="100">
-                        <input type="number" class="input-nota faltas" min="0" max="200">
-                    </div>
                 </form>
 
                 <span id="legenda-notas">
@@ -107,41 +67,13 @@
                     <h4> 1º Bim </h4> <h4> 2º Bim </h4> <h4> 3º Bim </h4> <h4> 4º Bim </h4> <h4> Faltas </h4>
                 </span>
 
-                <button id="button-calculo"> Go ! </button>
+                <button class="botao adicionar" id="addAluno">Adicionar aluno !</button>
             </div>
 
             <div class="resultado-contaneir">
-                <h1 class="resultado title"> Resultado Final </h1>
-                <br>
-
-                <form class="resultado-output">
-                    <!-- Substituir Aluno X pelo NOME dado ao Aluno anteriomente -->
-                    <h3> Aluno A: </h3>                                  
-                    <output id="resultado-alunoA">  </output>
-                    <output id="media-alunoA">      </output>
-                    <br>
-
-                    <h3> Aluno B: </h3>
-                    <output id="resultado-alunoB">  </output>
-                    <output id="media-alunoB">      </output>
-                    <br>
-
-                    <h3> Aluno C: </h3>
-                    <output id="resultado-alunoC">  </output>
-                    <output id="media-alunoC">      </output>
-                    <br>
-
-                    <h3> Aluno D: </h3>
-                    <output id="resultado-alunoD">  </output>
-                    <output id="media-alunoD">      </output>
-                    <br>
-
-                    <h3> Aluno E: </h3>
-                    <output id="resultado-alunoE">  </output>
-                    <output id="media-alunoE">      </output>
-                    <br>
-
-                </form>
+                <h1 class="resultado title"> Turma/Boletim </h1>
+                
+                <div id="outputBoletim"></div>
 
                 <span>
                     <h4> Situação Final </h4>
