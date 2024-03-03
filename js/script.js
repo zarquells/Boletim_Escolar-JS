@@ -7,7 +7,18 @@ addAluno.addEventListener('click', function (){
     let in_nota2  = parseFloat(document.querySelector('.nota2').value)
     let in_nota3  = parseFloat(document.querySelector('.nota3').value)
     let in_nota4  = parseFloat(document.querySelector('.nota4').value)
-    let in_faltas = parseFloat(document.querySelector('.faltas').value)
+    // let in_faltas = parseFloat(document.querySelector('.faltas').value)
+
+    if (in_nome   == "" ||
+        in_nota1  == "" ||
+        in_nota2  == "" ||
+        in_nota3  == "" ||
+        in_nota4  == "" ) {
+        alert('Campo vazio, preencha corretamente.')
+    } 
+    
+    else {
+        let mediaAluno = (in_nota1 + in_nota2 + in_nota3 + in_nota4) / 4
 
     alunos.push ({
         nome: in_nome,
@@ -15,9 +26,9 @@ addAluno.addEventListener('click', function (){
         nota2: in_nota2,
         nota3: in_nota3,
         nota4: in_nota4,
-        faltas: in_faltas,
+        media: mediaAluno
+        // faltas: in_faltas,
         // situacao: situacaoA,
-        // Amedia: media
     })
 
     //zerar input
@@ -26,28 +37,28 @@ addAluno.addEventListener('click', function (){
     document.querySelector('.nota2').value  = ""
     document.querySelector('.nota3').value  = ""
     document.querySelector('.nota4').value  = ""
-    document.querySelector('.faltas').value = ""
+    // document.querySelector('.faltas').value = ""
+    }
 
-    //exibir notas e nomes
-    let outputBoletim = document.querySelector('#outputBoletim')
-    outputBoletim.innerHTML = ""
+    //exibição
+    let outputAlunos = document.querySelector('#outputAlunos')
+    let outputResultados = document.querySelector('#outputBoletim')
 
-    let medias = []
+    outputAlunos.innerHTML = ""
 
-    alunos.forEach(aluno => {
-        let media = (aluno.nota1 + aluno.nota2 + aluno.nota3 + aluno.nota4) / 4;
-        medias.push(media)
-
-        let outBoletim = `
-                <h3>${aluno.nome}</h3>
-                <p> ${aluno.nota1}</p>
-                <p> ${aluno.nota2}</p>
-                <p> ${aluno.nota3}</p>
-                <p> ${aluno.nota4}</p>
-                <p> ${aluno.faltas}</p>
-                <p> ${media.toFixed(1)}</p>
+    const exibirAlunos = alunos.map(aluno => `
+        <h3>${aluno.nome}</h3>
+        <p> ${aluno.nota1}</p>
+        <p> ${aluno.nota2}</p>
+        <p> ${aluno.nota3}</p>
+        <p> ${aluno.nota4}</p>
+        <p> ${aluno.media.toFixed(1)}</p>
         `
-        outputBoletim.innerHTML += outBoletim
-    })
+        // <p> ${aluno.faltas}</p>
+    )
 
+    // const exibirAlunos = alunos.map(aluno => `
+    // )
+       outputAlunos.innerHTML += exibirAlunos
+    
 })
