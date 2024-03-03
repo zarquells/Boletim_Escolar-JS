@@ -27,7 +27,6 @@ addAluno.addEventListener('click', function (){
         nota3: in_nota3,
         nota4: in_nota4,
         media: mediaAluno
-        // faltas: in_faltas,
         // situacao: situacaoA,
     })
 
@@ -37,28 +36,41 @@ addAluno.addEventListener('click', function (){
     document.querySelector('.nota2').value  = ""
     document.querySelector('.nota3').value  = ""
     document.querySelector('.nota4').value  = ""
+    document.querySelector('.nota4').value  = ""
     // document.querySelector('.faltas').value = ""
     }
 
     //exibição
     let outputAlunos = document.querySelector('#outputAlunos')
-    let outputResultados = document.querySelector('#outputBoletim')
+    let outputResultados = document.querySelector('#outputResultados')
 
     outputAlunos.innerHTML = ""
 
     const exibirAlunos = alunos.map(aluno => `
+        <div class="aluno-out">
         <h3>${aluno.nome}</h3>
         <p> ${aluno.nota1}</p>
         <p> ${aluno.nota2}</p>
         <p> ${aluno.nota3}</p>
         <p> ${aluno.nota4}</p>
         <p> ${aluno.media.toFixed(1)}</p>
+        </div>
         `
-        // <p> ${aluno.faltas}</p>
-    )
+    ).join("")
 
-    // const exibirAlunos = alunos.map(aluno => `
-    // )
        outputAlunos.innerHTML += exibirAlunos
     
+    //calcular media da sala
+    let somaMediasSala = alunos.reduce((total, aluno) => total + aluno.media, 0);
+    let mediaSala = somaMediasSala / alunos.length;
+
+    //alunos abaixo da média
+    let alunosAbaixo = alunos.filter(aluno => aluno.media < mediaSala);
+
+    outputResultados.innerHTML = `Média Geral: ${mediaSala.toFixed(1)}<br>`;
+    outputResultados.innerHTML = `Alunos abaixo da média:<br>`;
+
+    alunosAbaixo.forEach(aluno => {
+        outputResultados.innerHTML += `${aluno.nome} - Média: ${aluno.media.toFixed(1)}<br>`;
+    });
 })
