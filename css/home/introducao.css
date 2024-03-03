@@ -3,10 +3,6 @@
 }
 
 .descricao-contaneir{
-    .title{
-        padding-bottom: 19px;
-    }
-    flex-grow: 0;
     .text{
         line-height: 1.43;
     }

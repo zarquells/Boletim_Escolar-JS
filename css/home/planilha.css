@@ -12,7 +12,28 @@ input.nome{
     height: 25px;
     display: flex;
     margin: 5px 0px 5px 124px;
+    gap: 30px;
+}
+
+.bottons{
+    display: flex;
+    margin: 15px 440px 15px 0px;
+    justify-content: flex-end;
     gap: 36px;
 }
 
-
+button{
+    width: 107px;
+    height: 25px;
+    border-radius: 10px;
+    background-color: #4f8a69;
+    outline: none;
+    border: none;
+    transition: transform 0.5s ease; 
+}
+button:hover{
+    background-color: #4f8a68bd;
+}
+button:active {
+    transform: scale(0.8);
+}
