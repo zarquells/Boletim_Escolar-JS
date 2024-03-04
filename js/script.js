@@ -38,7 +38,7 @@ addAluno.addEventListener('click', function (){
             situacaoAluno = "Recuperação"
         }
         else {
-            situacaoAluno = "Reprovado"
+            situacaoAluno = "<output class="special-situacao" style="color: red;"> Reprovado </output>"
         }
         
         //atribuir valores ao array
