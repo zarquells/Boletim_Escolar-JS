@@ -39,14 +39,14 @@ button:active {
 }
 
 .botao{
-    margin-left: 335px;
     display: flex;
-    margin-top: 20px;
     margin: 20px 0px 20px 335px;
+    align-items: center;
+    padding: 5px 8px;
 }
 
 .visualizar{
-    margin-left: 445px;
+    margin-left: 470px;
 }
 
 #outputAlunos{
@@ -68,6 +68,8 @@ button:active {
     border-radius: 10px;
     background-color: rgba(217, 217, 217, 0.1);
     font-size: medium;
+    max-width: 120px;
+    line-break: anywhere;
 }
 
 #excecao-media{
@@ -80,4 +82,10 @@ button:active {
 .special-situacao.media{
     padding: 2px 8px 2px 8px;
     width: 48px;
+}
+
+.outputResultados {
+    margin-bottom: 83px;
+    
+
 }

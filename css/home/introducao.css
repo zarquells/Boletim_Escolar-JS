@@ -8,6 +8,9 @@
     }
 }
 
+.descricao-contaneir p {
+    max-width: 500px;
+}
 .logo-contaneir{
     position: relative;
     margin-left: auto;

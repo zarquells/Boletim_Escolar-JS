@@ -87,8 +87,8 @@ const viewResult = document.querySelector('#viewResult')
 
 viewResult.addEventListener('click', function () {
 
-    if (alunos.length < 5) {
-        alert('Alunos insuficientes. Registre no minino 5.')
+    if (alunos.length < 3) {
+        alert('Alunos insuficientes. Registre no mínino 3.')
     } 
 
     else {
@@ -101,10 +101,10 @@ viewResult.addEventListener('click', function () {
     
         //exibir
         outputResultados.innerHTML = `Média Geral: <output> ${mediaSala.toFixed(1)} </output> <br>`;
-        outputResultados.innerHTML += `Alunos abaixo da Média: <br>`;
+        outputResultados.innerHTML += `<h4 style="margin-bottom: 10px"> Alunos abaixo da Média: <br></h4>`;
     
         alunosAbaixo.forEach(aluno => {
-            outputResultados.innerHTML += ` <output> ${aluno.nome} </output> <br> `;
+            outputResultados.innerHTML += ` <output class="nome-output" style="margin-bottom: 10px"> ${aluno.nome} </output> <br> `;
         })
     }
 })
