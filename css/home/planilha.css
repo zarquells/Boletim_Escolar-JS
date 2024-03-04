@@ -1,6 +1,6 @@
 input.nome{
-    width: 90px;
-    height: 21px;
+    width: 100px;
+    height: 23px;
     padding: 0 0 1px 15px;
 }
 
@@ -8,11 +8,84 @@ input.nome{
     margin-top: 10px;
 }
 
-#legenda-notas{
+
+.legenda-notas{
     height: 25px;
     display: flex;
-    margin: 5px 0px 5px 124px;
+    margin: 5px 0px 5px 147px;
+    gap: 30px;
+}
+
+.bottons{
+    display: flex;
+    margin: 15px 440px 15px 0px;
+    justify-content: flex-end;
     gap: 36px;
 }
 
+button{
+    height: 25px;
+    border-radius: 10px;
+    background-color: #4f8a69;
+    outline: none;
+    border: none;
+    transition: transform 0.5s ease; 
+}
+button:hover{
+    background-color: #4f8a68bd;
+}
+button:active {
+    transform: scale(0.8);
+}
 
+.botao{
+    display: flex;
+    margin: 20px 0px 20px 335px;
+    align-items: center;
+    padding: 5px 8px;
+}
+
+.visualizar{
+    margin-left: 470px;
+}
+
+#outputAlunos{
+    width: fit-content;
+}
+.aluno-output{
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+    padding-bottom: 8px;
+
+    p{
+        width: 60px;
+    }
+}
+.nome-output{
+    width: 100px;
+    padding: 2px 15px 2px 15px;
+    border-radius: 10px;
+    background-color: rgba(217, 217, 217, 0.1);
+    font-size: medium;
+    max-width: 120px;
+    line-break: anywhere;
+}
+
+#excecao-media{
+    padding-left: 10px;
+}
+
+.special-situacao{
+    width: fit-content;
+}
+.special-situacao.media{
+    padding: 2px 8px 2px 8px;
+    width: 48px;
+}
+
+.outputResultados {
+    margin-bottom: 83px;
+    
+
+}

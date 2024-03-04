@@ -15,12 +15,35 @@ body {
 
 input{
     width: 70px;
-    height: 17px;
+    height: 20px;
     margin: 0 8px 0 0;
     border-radius: 10px;
     outline: none;
     border: none;
     background-color: rgba(217, 217, 217, 0.1);
+}
+
+output{
+    width: 30px;
+    padding: 2px 15px 2px 15px;
+    border-radius: 10px;
+    background-color: rgba(217, 217, 217, 0.1);
+    font-size: medium;
+}
+
+
+span{
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+span.special{
+    gap: 22px;
+    margin: 5px 0px 5px 152px;
+}
+
+h3, output{
+    display: inline-block;
 }
 
 h1,
@@ -57,6 +80,5 @@ border-radius: 4px;
 }
 
 .squad-name{
-    width: 64px;
-    height: 41px;
+    text-align: right;
 }

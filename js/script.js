@@ -35,7 +35,7 @@ addAluno.addEventListener('click', function (){
             situacaoAluno = "Aprovado"
         }
         else if (mediaAluno >= 50 && mediaAluno <= 70) {
-            situacaoAluno = "Em recuperação"
+            situacaoAluno = "Recuperação"
         }
         else {
             situacaoAluno = "Reprovado"
@@ -67,14 +67,14 @@ addAluno.addEventListener('click', function (){
     outputAlunos.innerHTML = ""
     
     const exibirAlunos = alunos.map(aluno => `
-            <div class="aluno-out">
-            <h3>${aluno.nome}</h3>
-            <p> ${aluno.nota1}</p>
-            <p> ${aluno.nota2}</p>
-            <p> ${aluno.nota3}</p>
-            <p> ${aluno.nota4}</p>
-            <p> ${aluno.media.toFixed(1)}</p>
-            <p> ${aluno.situacao}</p>
+            <div class="aluno-output">
+                <h3 class="nome-output">${aluno.nome}</h3>
+                <output> ${aluno.nota1}</output>
+                <output> ${aluno.nota2}</output>
+                <output> ${aluno.nota3}</output>
+                <output> ${aluno.nota4}</output>
+                <output style="padding: 2px 8px 2px 8px; width: 48px;"> ${aluno.media.toFixed(1)}</output>
+                <output class="special-situacao"> ${aluno.situacao}</output>
             </div>
             `
             ).join("")
@@ -87,8 +87,8 @@ const viewResult = document.querySelector('#viewResult')
 
 viewResult.addEventListener('click', function () {
 
-    if (alunos.length < 5) {
-        alert('Alunos insuficientes. Registre no minino 5.')
+    if (alunos.length < 3) {
+        alert('Alunos insuficientes. Registre no mínino 3.')
     } 
 
     else {
@@ -100,11 +100,11 @@ viewResult.addEventListener('click', function () {
         let alunosAbaixo = alunos.filter(aluno => aluno.media < mediaSala);
     
         //exibir
-        outputResultados.innerHTML = `Média Geral: ${mediaSala.toFixed(1)}<br>`;
-        outputResultados.innerHTML += `Alunos abaixo da média:<br>`;
+        outputResultados.innerHTML = `Média Geral: <output> ${mediaSala.toFixed(1)} </output> <br>`;
+        outputResultados.innerHTML += `<h4 style="margin-bottom: 10px"> Alunos abaixo da Média: <br></h4>`;
     
         alunosAbaixo.forEach(aluno => {
-            outputResultados.innerHTML += `${aluno.nome} - Média: ${aluno.media.toFixed(1)}<br>`;
+            outputResultados.innerHTML += ` <output class="nome-output" style="margin-bottom: 10px"> ${aluno.nome} </output> <br> `;
         })
     }
 })

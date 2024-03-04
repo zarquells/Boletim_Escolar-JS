@@ -10,6 +10,7 @@ body{
 .title{
     font-size: 30px;
     line-height: 26px;
+    padding-bottom: 19px;
 }
 
 .font-sailormoon{
@@ -21,4 +22,12 @@ body{
 .font-squad-name{
     font-size: 14px;
     line-height: 1;
-};
+}
+
+button{
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #afe2c1;
+    font-size: 14px;
+}

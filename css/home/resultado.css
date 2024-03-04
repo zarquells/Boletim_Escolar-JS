@@ -1,0 +1,14 @@
+.resultado-output{
+    display: inline-grid;
+    row-gap: 10px; 
+
+}
+
+.resultado-output-turma{
+    margin-top: 36px;
+    display: block;
+}
+
+#nome-abaixoM{
+    padding: 2px 10px 2px 10px
+}
