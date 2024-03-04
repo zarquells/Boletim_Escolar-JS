@@ -30,8 +30,8 @@
                     <br>
 
                     <p class="text">
-                        Tabela dinâmica feita com JavaScript para <br> calcular as médias finais de 5 alunos da <br> Turma X, professor J, Matéria Y. <br>
-                        Insira os dados dinâmicos de cada aluno como <br> nome, nota p/ bimestre e faltas totais.
+                        Tabela dinâmica feita com JavaScript para <br> calcular as médias finais de pelo menos 5 alunos. <br>
+                        Insira os dados dinâmicos de cada aluno como <br> nome e nota p/ bimestre e em seguida <br> aperte em adicionar aluno.
                     </p>
                 </div>
                 
@@ -50,9 +50,8 @@
                 <br>
 
                 <form class="alunos input">
-                    <!-- ALUNO 1 -->
                     <div id="AlunoA">
-                        <input type="text"   class="nome"   placeholder="Aluno A">
+                        <input type="text"   class="nome"   placeholder="Nome">
                         <input type="number" class="input-nota nota1"  min="0" max="100">
                         <input type="number" class="input-nota nota2"  min="0" max="100">
                         <input type="number" class="input-nota nota3"  min="0" max="100">
@@ -60,20 +59,24 @@
                     </div>
                 </form>
 
-                <span id="legenda-notas">
-                    <!-- Personalização exclusiva do <h4> para esta descrição T_T-->
+                <span class="legenda-notas">
                     <h4> 1º Bim </h4> <h4> 2º Bim </h4> <h4> 3º Bim </h4> <h4> 4º Bim </h4> 
                 </span>
 
-                <button class="botao adicionar" id="addAluno">Adicionar aluno !</button>
+                <button class="botao adicionar" id="addAluno">Adicionar Aluno</button>
             </div>
             
             <div class="resultado-contaneir">
-                <h1 class="resultado title">Turma/Boletim</h1>
+                <h1 class="resultado title">Boletim da Turma</h1>
+                <br>
                 <div id="outputAlunos"></div>
+                <span class="legenda-notas special">
+                    <!-- Personalização exclusiva do <h4> para esta descrição T_T-->
+                    <h4> 1º Bim </h4> <h4> 2º Bim </h4> <h4> 3º Bim </h4> <h4> 4º Bim </h4> <h4 style="padding-left: 10px;"> Média </h4> <h4 style="padding-left: 20px;"> Resultado</h4>
+                </span>
                 
             </div>
-            <button class="botao adicionar" id="viewResult">Visualizar Resultados</button>
+            <button class="botao visualizar" id="viewResult">Visualizar Resultados</button>
             <br>
             <br>
             <br>
@@ -92,30 +95,6 @@
         <br>
         <br>
         <div class="footer-container">    
-            <h2>Agradecemos a visita em nosso site!</h2>
-            <p>
-                Este projeto foi feito com <br> 
-                muito esforço e amor,      <br> 
-                espera que tenham gostado. 
-            </p>
-            <br>
-
-            <h2>Redes Sociais:</h2>
-            <p> 
-                Github:    LINK LINK <br>
-                LinkedIn:  LINK LINK <br> 
-                Instagram: LINK LINK 
-            </p>
-            <br>
-
-            <h2>Créditos:</h2>
-            <p>
-                Giovanna Santos <br>
-                Érica Lelis     <br>
-                Senai Suíço-Brasileiro
-            </p>
-            <br>
-            
             <span class="squad-name font-squad-name">
                 <p> Squad <p>
                 <p> Yume  <p>
